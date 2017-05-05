@@ -34,6 +34,9 @@ var RCTSFSafariViewControllerExport = {
 
     if(eventName == 'onDismiss')
       NativeAppEventEmitter.addListener('SFSafariViewControllerDismissed', listener);
+
+      if (eventName =='onSafariBack')
+        NativeAppEventEmitter.addListener('SFSafariViewControllerBackSafari', listener);
   },
 
   removeEventListener(eventName, listener) {
@@ -42,6 +45,9 @@ var RCTSFSafariViewControllerExport = {
 
     if(eventName == 'onDismiss')
       NativeAppEventEmitter.removeListener('SFSafariViewControllerDismissed', listener);
+
+      if (eventName =='onSafariBack')
+        NativeAppEventEmitter.removeListener('SFSafariViewControllerBackSafari', listener);
   },
 };
 
