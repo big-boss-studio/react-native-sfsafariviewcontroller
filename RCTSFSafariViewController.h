@@ -1,7 +1,8 @@
-#import "RCTBridgeModule.h"
-#import "RCTConvert.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTBridgeModule.h>
+#import <React/RCTConvert.h>
+#import <React/RCTEventDispatcher.h>
 #import <UIKit/UIKit.h>
+
 
 @import SafariServices;
 
